@@ -10,11 +10,15 @@
             background-color: #e4d571;
             color: #1b1918;
             font-family: Georgia, serif;
-            font-size: 20px;
+            font-size: 16px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         h1 {
-            font-size: 40px;
+            font-size: 28px;
         }
 
         input, select {
@@ -26,17 +30,68 @@
             font-size: 15px;
         }
 
-        input[type+"submit"] {
+        input[type="submit"] {
             background-color: #555;
             cursor: pointer;
+            color: white;
+            border: 1px solid #555;
+            padding: 5px;
+            font-size: 15px;
+            width: 100%;
+            margin-top: 10px;
         }
 
         hr {
             margin: 20px 0;
         }
+
+        .navbar {
+            width: 100%;
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 25px
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 18px;
+            font-family: Georgia, serif;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 400px;
+            margin-top: 20px;
+        }
+
+
+        input, select {
+            width: 100%;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
     </style>
 </head>
 <body>
+
+<div class="navbar">
+    <a href="index.php">Home</a>
+    <a href="lab1.php">Lab 1</a>
+    <a href="lab2.php">Lab 2</a>
+    <a href="lab3.php">Lab 3</a>
+</div>
+
     <h1>ATM Machine Simulator</h1>
 
     <form method="POST">
@@ -120,8 +175,6 @@
     }
 
     ?>
-
-<a href="index.php"> Back to Homescreen </a>
 
 </body>
 </html>
